@@ -19,9 +19,12 @@
 </head>
 <body>
     <h1 id="greet">welcome to our main page</h1>
-    <button data-color="blue">blue</button>
-    <button data-color="red">red</button>
-    <button data-color="yellow">yellow</button>
+    <!-- to craete a dropdown -->
+    <select name="colour" id="button">
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="black">black</option>
+    </select>
 </body>
 </html>
 document.querySelector('button[data-color="red"]').onclick=function(){
