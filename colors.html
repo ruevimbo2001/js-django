@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+//instead of the function() replace with the shorthand => and place the input for the function before in js
+          document.querySelectorAll('button').forEach(button =>{
+            button.onclick = ()=>{
+              document.querySelector('#greet').style.color = button.dataset.color;
+            }
+            
+          }); 
+        });
+
+        //creating a dropdown in js
+    </script>
+</head>
+<body>
+    <h1 id="greet">welcome to our main page</h1>
+    <button data-color="blue">blue</button>
+    <button data-color="red">red</button>
+    <button data-color="yellow">yellow</button>
+</body>
+</html>
+document.querySelector('button[data-color="red"]').onclick=function(){
+    document.querySelector('#greet').style.color = 'red';
+  }
+  document.querySelector('#blue').onclick=function(){
+    document.querySelector('#greet').style.color = 'blue';
+
+  }
+  document.querySelector('#yellow').onclick=function(){
+        document.querySelector('#greet').style.color = 'yellow';
+    }
+  

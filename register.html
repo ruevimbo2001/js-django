@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+
+            document.querySelector('form').onsubmit = ()=>{
+             const name = document.querySelector('#name').value; 
+             alert(`welcome,${name}!`);
+            };
+        });  
+    </script>
+</head>
+<body>
+    <form action="POST">
+        <input type="text" autofocus id="name" placeholder="Enter yout full name">
+        <input type="text" autofocus id="adress" placeholder="enter your full residental adress">
+        <input type="email" autofocus id="email" placeholder="Enter you email adress">
+        <input type="number" autofocus id="contact" placeholder="Enter your contact details">
+        <input type="password" autofocus id="password1" placeholder="Enter your password">
+        <input type="password" autofocus id="password2" placeholder="Confirm password">
+        <input type="submit" autofocus id="submit" >
+    </form>
+</body>
+</html>
